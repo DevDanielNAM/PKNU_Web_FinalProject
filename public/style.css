@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gowun+Dodum&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+}
+
+h1,
+h3,
+input[type="button"],
+input[type="submit"],
+footer {
+  font-family: "Black Han Sans", sans-serif;
+}
+
+input[type="button"],
+input[type="submit"] {
+  font-size: 1.2rem;
+}
+
+#header-title,
+footer {
+  color: white;
+}
+
+#header-title {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+.header-container {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(64, 129, 225, 0.7);
+  width: 100%;
+  padding: 10px 5px;
+  cursor: pointer;
+}
+
+#accent {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 1.3rem;
+}
+
+.main-container {
+  margin: 20px;
+}
+
+.main-container section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-container ul {
+  padding-left: 0;
+}
+
+.header-container img {
+  width: 53.9px;
+  height: 79.7px;
+  margin-right: 20px;
+}
+
+.select-date h3,
+.calc-date h3 {
+  text-align: center;
+}
+
+.nav {
+  justify-content: center;
+}
+
+.nav-link {
+  cursor: pointer;
+}
+
+.select-date-container {
+  display: flex;
+}
+
+#empty-fetch-content {
+  text-align: center;
+}
+
+#start-date {
+  height: calc(3rem);
+  width: 33vw;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  margin-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.main-calc-date {
+  width: 100%;
+}
+
+.main-calc-container {
+  width: 65vw;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid green;
+  border-radius: 5px;
+}
+
+.main-calc-date .calc-date li {
+  list-style-type: none;
+  text-align: center;
+}
+
+.calc-date {
+  width: 100%;
+}
+
+.calc-date ul {
+  border-top: 3px solid rgba(3, 110, 74, 0.5);
+  border-radius: 3px;
+  width: 40vw;
+}
+
+ul > .item-title {
+  font-size: 1.5rem;
+}
+
+.main-list-container {
+  display: flex;
+  flex-direction: column;
+  width: 75vw;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 15px auto;
+  border-bottom: black solid 2.5px;
+  border-right: black solid 2.5px;
+  transition: 0.3s ease-in-out;
+}
+
+.main-list-container:first-child {
+  margin-top: 20px;
+}
+
+.main-list-container:last-child {
+  margin-bottom: 20px;
+}
+
+.main-list-container:hover {
+  border-bottom: 2.5px solid rgba(33, 106, 215, 0.8);
+  border-right: 2.5px solid rgba(33, 106, 215, 0.8);
+  background-color: rgba(33, 106, 215, 0.6);
+  color: white;
+}
+
+.main-list-container label {
+  color: black;
+}
+
+.main-list-container hr {
+  width: 470px;
+}
+
+.calc-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#calc-date-text {
+  text-align: center;
+}
+
+.input-date > .form-check {
+  display: flex;
+  justify-content: center;
+}
+
+.item-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.item-form-container > .form-check {
+  display: flex;
+  justify-content: center;
+}
+
+.form-check-input {
+  margin-right: 5px;
+}
+
+.content-list ul {
+  width: 85vw;
+  border: 2px solid blue;
+  border-radius: 5px;
+}
+
+.content-list li {
+  list-style-type: none;
+  margin-right: 10px;
+}
+
+#create-submit {
+  display: flex;
+  align-items: center;
+}
+
+.main-form-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 15px;
+}
+
+.main-form-container .delete,
+.main-form-container .update {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+input::placeholder {
+  color: rgba(64, 129, 225);
+  opacity: 0.5;
+}
+
+input[name="content"],
+input[name="nickname"],
+input[name="datestamp"],
+input[name="password"] {
+  height: 5vh;
+  width: 33vw;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+input[name="input-calc-date"] {
+  width: 40vw;
+  margin-bottom: 10px;
+}
+
+input[name="datestamp"] {
+  height: calc(3.5rem + 2px);
+}
+
+.btn-warning,
+.btn-danger {
+  width: 100px;
+  height: calc(3.5rem + 2px);
+}
+
+.btn-outline-primary {
+  width: 100px;
+  height: calc(3.5rem + 2px);
+}
+
+.main-create-form-container {
+  display: flex;
+  justify-content: center;
+}
+
+#nickname-create,
+#content-create,
+#celeb-create,
+#password-create {
+  margin-right: 10px;
+}
+
+footer {
+  background-color: rgba(64, 129, 225, 0.7);
+  width: 100%;
+  position: relative;
+  transform: translateY(0%);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+@media (max-width: 523px) {
+  #header-title {
+    font-size: 2.5rem;
+  }
+
+  .main-calc-container {
+    width: 80vw;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="date"],
+  input + label {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #header-title {
+    font-size: 2rem;
+  }
+
+  .nav-item {
+    width: 30vw;
+    font-size: 1rem;
+  }
+
+  #accent {
+    font-size: 1rem;
+
+    .main-calc-container {
+      width: 80vw;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="date"],
+    input + label {
+      font-size: 0.5rem;
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  #nav-link3 {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .nav-item {
+    font-size: 0.9rem;
+  }
+
+  #nav-pills {
+    flex-wrap: nowrap;
+  }
+}
